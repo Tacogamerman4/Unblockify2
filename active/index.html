@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
    <head>
+          <style>
+        body {
+            background-color: #0a0a19;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: absolute;
+            top: 31.5%; /* Slightly above center */
+        }
+    </style>
+              <link rel="icon" type="image/x-icon" href="Logo.png">
       <style>
    .disclaimer {
       position: fixed;
       top: 10px;
       font-size: 12px;
       color: #FFFFFF;
-      background: rgba(255, 255, 255, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
       padding: 5px 10px;
       border-radius: 5px;
    }
@@ -46,7 +69,7 @@
    /* Custom CSS for black theme */
 body {
   background-color:#120924;
-  color: #fff;
+  color: #FFFFFF;
   margin: 0;
   padding: 0;
 }
@@ -88,7 +111,7 @@ body {
   margin: 0;
   font-size: 24px;
   font-family: 'Arial', sans-serif;
-  color: #fff;
+  color: #FFFFFF;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -120,7 +143,7 @@ body {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
   background-color: #222;
   text-align: center;
-  color: #fff;
+  color: #FFFFFF;
   cursor:cell;
 }
 
@@ -136,7 +159,7 @@ a{
 }
 
 .form__input::placeholder {
-  color: #aaa;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -163,7 +186,7 @@ a{
   padding-top: 7.5px;
   padding-bottom: 10px;
   text-align: center;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
 }
 
@@ -218,7 +241,7 @@ a{
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
    </head>
    <body>
-      
+          <div class="logo">Unblockify 2</div>
       
       <canvas id="canvas"></canvas>
       <div id="header">
@@ -235,9 +258,7 @@ a{
                 <img src="https://img.icons8.com/?size=100&id=48137&format=png&color=000000" alt="Now.gg" onclick="autofill('https://now.gg/')">
                 <img src="https://img.icons8.com/?size=100&id=48166&format=png&color=000000" alt="DuckDuckGo" onclick="autofill('https://duckduckgo.com')">
                 <img src="https://img.icons8.com/?size=100&id=92582&format=png&color=000000" alt="GeForce NOW" onclick="autofill('https://play.geforcenow.com/')">
-                <img src="https://img.icons8.com/?size=100&id=KeTtCQ_b-ZiV&format=png&color=000000" alt="TikTok" onclick="autofill('https://tiktok.com')">
                 <img src="https://img.icons8.com/?size=100&id=53013&format=png&color=000000" alt="Twitch" onclick="autofill('https://twitch.tv')">
-               <img src="https://img.icons8.com/?size=100&id=kTuxVYRKeKEY&format=png&color=000000" alt="ChatGPT" onclick="autofill('https://chatgpt.com')">
             </div>
           <div class="desc left-margin">
             <p id="uv-error"></p>
